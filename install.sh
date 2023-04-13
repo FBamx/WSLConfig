@@ -3,6 +3,18 @@
 # This scirpt will install various necessary tools
 # for the new environment
 
+hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
+wslip=$(hostname -I | awk '{print $1}')
+port=10809
+
+PROXY_HTTP="http://${hostip}:${port}"
+
+export http_proxy="${PROXY_HTTP}"
+export HTTP_PROXY="${PROXY_HTTP}"
+export https_proxy="${PROXY_HTTP}"
+export HTTPS_proxy="${PROXY_HTTP}"
+
+
 echo "apt install ..."
 sudo apt update
 sudo apt install net-tools -y
