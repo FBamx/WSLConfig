@@ -59,6 +59,7 @@ echo "--------------------"
 echo "install plugins for zsh"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins
+source ~/.zshrc
 echo "--------------------"
 
 
