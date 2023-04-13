@@ -43,9 +43,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 echo "--------------------"
 
 
-cd ~
-
-
 echo "test proxy"
 curl google.com
 echo "--------------------"
