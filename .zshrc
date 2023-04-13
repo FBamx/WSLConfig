@@ -15,9 +15,9 @@ alias kc=kubectl
 alias kb=kubebuilder
 alias proxy=proxy.sh
 alias nv=neovide
-alias proxy="source /root/proxy.sh"
+alias proxy="source ~/proxy.sh"
 alias lg=lazygit
-. /root/proxy.sh set
+. ~/proxy.sh set
 
 # export PATH=$PATH:/usr/local/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
