@@ -44,6 +44,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plug
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins
 echo "--------------------"
 
+
 echo "git clone WSLConfig"
 git clone https://github.com/FBamx/WSLConfig.git
 mv WSLConfig/* WSLConfig/.zshrc WSLConfig/.tmux.conf ./
@@ -79,4 +80,3 @@ echo "if the environment is WSL, please configure /etc/wsl.conf like follow"
 echo "[boot]"
 echo "systemd=true"
 echo "done"
-
