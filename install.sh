@@ -43,10 +43,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 echo "--------------------"
 
 
-mv .zshrc ~/
-mv .tmux.conf ~/
-mv proxy.sh ~/
-
 cd ~
 
 
@@ -58,6 +54,11 @@ echo "--------------------"
 echo "install oh my zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "--------------------"
+
+
+mv .zshrc ~/
+mv .tmux.conf ~/
+mv proxy.sh ~/
 
 
 echo "install plugins for zsh"
