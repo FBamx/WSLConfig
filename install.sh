@@ -60,8 +60,8 @@ mv proxy.sh ~/
 
 echo "install plugins for zsh"
 cd ~/.oh-my-zsh/plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 source ~/.zshrc
 cd ~
 echo "--------------------"
