@@ -41,8 +41,14 @@ sudo install lazygit /usr/local/bin
 echo "--------------------"
 
 
+echo "install nodejs"
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install v16.8.0
+echo "--------------------"
+
+
 echo "install nvim"
-curl -L https://github.com/neovim/neovim/releases/tag/stable/nvim.appimage
+wget https://github.com/neovim/neovim/releases/tag/stable/nvim.appimage
 chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 echo "--------------------"
 
