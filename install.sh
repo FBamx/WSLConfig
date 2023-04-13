@@ -5,14 +5,14 @@
 
 echo "apt install ..."
 sudo apt update
-sudo apt install net-tools
-sudo apt install openssh-server
-sudo apt install gcc
-sudo apt install g++
-sudo apt install ripgrep
-sudo apt install fd-find
-sudo apt install zsh
-sudo apt install curl
+sudo apt install net-tools -y
+sudo apt install openssh-server -y
+sudo apt install gcc -y
+sudo apt install g++ -y
+sudo apt install ripgrep -y
+sudo apt install fd-find -y
+sudo apt install zsh -y
+sudo apt install curl -y
 echo "--------------------"
 
 cd ~
@@ -61,8 +61,7 @@ echo "--------------------"
 echo "install docker"
 sudo apt-get install \
     ca-certificates \
-    curl \
-    gnupg
+    gnupg -y
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
@@ -71,7 +70,7 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 echo "--------------------"
 
 
