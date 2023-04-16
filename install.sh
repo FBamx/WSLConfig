@@ -23,7 +23,6 @@ sudo apt install gcc -y
 sudo apt install g++ -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
-sudo apt install zsh -y
 sudo apt install curl -y
 echo "--------------------"
 
@@ -48,23 +47,9 @@ curl google.com
 echo "--------------------"
 
 
-echo "install oh my zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-echo "--------------------"
-
-
 mv .zshrc ~/
 mv .tmux.conf ~/
 mv proxy.sh ~/
-
-
-echo "install plugins for zsh"
-cd ~/.oh-my-zsh/plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions.git
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-source ~/.zshrc
-cd ~
-echo "--------------------"
 
 
 echo "install lazygit"
