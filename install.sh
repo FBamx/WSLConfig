@@ -18,12 +18,15 @@ export HTTPS_proxy="${PROXY_HTTP}"
 echo "apt install ..."
 sudo apt update
 sudo apt install net-tools -y
+sudo apt install make -y
 sudo apt install openssh-server -y
 sudo apt install gcc -y
 sudo apt install g++ -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
 sudo apt install curl -y
+sudo apt install libevent-dev -y
+sudo apt install tmux -y
 echo "--------------------"
 
 echo "install docker"
@@ -60,6 +63,9 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 echo "--------------------"
 
+echo "install tpm"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo "--------------------"
 
 echo "install nodejs"
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
