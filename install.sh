@@ -47,9 +47,10 @@ curl google.com
 echo "--------------------"
 
 
-mv .zshrc ~/
-mv .tmux.conf ~/
-mv proxy.sh ~/
+cp .zshrc ~/
+cp .tmux.conf ~/
+cp proxy.sh ~/
+cp jandedobbeleer.omp.json ~/
 
 
 echo "install lazygit"
