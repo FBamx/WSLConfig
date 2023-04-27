@@ -21,14 +21,14 @@ alias lg=lazygit
 
 # export PATH=$PATH:/usr/local/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/usr/local/node-v18.15.0-linux-x64/bin
-export PATH=$PATH:/usr/local/jdk-17.0.5/bin
-export PATH=$PATH:/root/go/bin
-export PATH=$PATH:/root
+# export PATH=$PATH:/usr/local/node-v18.15.0-linux-x64/bin
+# export PATH=$PATH:/usr/local/jdk-17.0.5/bin
+export PATH=$PATH:~/go/bin
+# export PATH=$PATH:~/
 
 # autojump git clone git://github.com/wting/autojump.git || cd autojump || ./install.py
-[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
-autoload -U compinit && compinit -u
+# [[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
+# autoload -U compinit && compinit -u
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
