@@ -50,7 +50,6 @@ curl google.com
 echo "--------------------"
 
 
-cp .zshrc ~/
 cp .tmux.conf ~/
 cp proxy.sh ~/
 cp jandedobbeleer.omp.json ~/
