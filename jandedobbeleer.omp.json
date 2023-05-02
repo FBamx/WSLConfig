@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#feae34",
+          "background": "#845EC2",
           "foreground": "#262b44",
           "leading_diamond": "\ue0b6",
           "powerline_symbol": "\ue0b0",
@@ -22,7 +22,7 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#ffffff",
-          "background": "#7FD5EA",
+          "background": "#008CCB",
           "template": " ‭ﳑ {{ .Full }} "
         },
         {
@@ -38,7 +38,7 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#ffffff",
-          "background": "#4063D8",
+          "background": "#008CCB",
           "template": "  {{ .Full }}"
         },
         {
@@ -70,16 +70,16 @@
           "style": "powerline",
           "powerline_symbol": "",
           "foreground": "#000000",
-          "background": "#ebcc34",
+          "background": "#F3C5FF",
           "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
         },
         {
-          "background": "#fee761",
+          "background": "#B39CD0",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#f77622{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#e43b44{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FBEAFF{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ef5350{{ end }}",
             "{{ if gt .Ahead 0 }}#2ce8f5{{ end }}",
-            "{{ if gt .Behind 0 }}#f77622{{ end }}"
+            "{{ if gt .Behind 0 }}#FBEAFF{{ end }}"
           ],
           "foreground": "#262b44",
           "powerline_symbol": "\ue0b0",
@@ -93,7 +93,7 @@
           "type": "git"
         },
         {
-          "background": "#0095e9",
+          "background": "#00C9A7",
           "background_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
           "foreground": "#ffffff",
           "leading_diamond": "<transparent,background>\ue0b0</>",
