@@ -95,6 +95,10 @@ chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 git clone https://github.com/FBamx/lazynvim.git -b master ~/.config/nvim
 echo "--------------------"
 
+echo "install autojump"
+git clone https://github.com/wting/autojump.git ~/
+echo "--------------------"
+
 echo "if the environment is WSL, please configure /etc/wsl.conf like follow"
 echo "[boot]"
 echo "systemd=true"
