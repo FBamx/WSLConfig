@@ -14,7 +14,6 @@ alias vim=nvim
 alias kc=kubectl
 alias kb=kubebuilder
 alias proxy=proxy.sh
-alias nv=neovide
 alias proxy="source ~/proxy.sh"
 alias lg=lazygit
 . ~/proxy.sh set
@@ -38,5 +37,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # autojump
 # git clone https://github.com/wting/autojump.git
-[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u

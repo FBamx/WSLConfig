@@ -105,7 +105,9 @@ echo "--------------------"
 echo "install autojump"
 git clone https://github.com/wting/autojump.git ~/autojump
 sudo ln -s /usr/bin/python3 /usr/bin/python
-~/autojump/install.py
+cd ~/autojump
+./install.py
+cd ~/WSLConfig/
 echo "--------------------"
 
 echo "if the environment is WSL, please configure /etc/wsl.conf like follow"
