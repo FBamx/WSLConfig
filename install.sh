@@ -28,6 +28,7 @@ sudo apt install fd-find -y
 sudo apt install curl -y
 sudo apt install libevent-dev -y
 sudo apt install tmux -y
+sudo apt install python3.10 -y
 echo "--------------------"
 
 echo "install docker"
