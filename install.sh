@@ -15,7 +15,6 @@ export HTTP_PROXY="${PROXY_HTTP}"
 export https_proxy="${PROXY_HTTP}"
 export HTTPS_proxy="${PROXY_HTTP}"
 
-
 echo "apt install ..."
 sudo apt update
 sudo apt install net-tools -y
@@ -33,29 +32,26 @@ echo "--------------------"
 
 echo "install docker"
 sudo apt-get install \
-    ca-certificates \
-    gnupg -y
+	ca-certificates \
+	gnupg -y
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+	"deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |
+	sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 echo "--------------------"
-
 
 echo "test proxy"
 curl google.com
 echo "--------------------"
 
-
 cp .tmux.conf ~/
 cp proxy.sh ~/
 cp jandedobbeleer.omp.json ~/
-
 
 echo "install lazygit"
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
@@ -71,11 +67,10 @@ echo "--------------------"
 echo "install nodejs"
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install v16.8.0
 echo "--------------------"
-
 
 echo "install nvim"
 wget https://github.com/neovim/neovim/releases/tag/stable/nvim.appimage
@@ -103,7 +98,6 @@ wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 git clone https://github.com/FBamx/lazynvim.git -b master ~/.config/nvim
 echo "--------------------"
-
 
 echo "if the environment is WSL, please configure /etc/wsl.conf like follow"
 echo "[boot]"
