@@ -2,6 +2,7 @@
 
 # This scirpt will install various necessary tools
 # for the new environment
+# please use bash install.sh not sudo bash isntall.sh
 
 hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 wslip=$(hostname -I | awk '{print $1}')
@@ -22,6 +23,7 @@ sudo apt install make -y
 sudo apt install openssh-server -y
 sudo apt install gcc -y
 sudo apt install g++ -y
+sudo apt isntall wget -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
 sudo apt install curl -y
@@ -84,7 +86,21 @@ echo "install zoxide"
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 echo "--------------------"
 
-echo "git clone nvim conf"
+echo "install lf"
+wget https://github.com/gokcehan/lf/releases/download/r29/lf-linux-amd64.tar.gz
+chmod u+x lf-linux-amd64.tar.gz
+tar -zxvf lf-linux-amd64.tar.gz
+sudo mv lf /usr/local/bin
+rm -rf lf-linux-amd64.tar.gz
+mkdir -p ~/.config/lf
+cp ./lfrc ~/.config/lf
+curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/colors.example -o ~/.config/lf/colors
+curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/icons.example -o ~/.config/lf/icons
+echo "--------------------"
+
+echo "install nvim && download nvim conf from github"
+wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 git clone https://github.com/FBamx/lazynvim.git -b master ~/.config/nvim
 echo "--------------------"
 
