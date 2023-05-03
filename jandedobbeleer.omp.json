@@ -74,7 +74,7 @@
           "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
         },
         {
-          "background": "#B39CD0",
+          "background": "#FF79c6",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#FBEAFF{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ef5350{{ end }}",
