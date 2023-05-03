@@ -77,10 +77,6 @@ wget https://github.com/neovim/neovim/releases/tag/stable/nvim.appimage
 chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 echo "--------------------"
 
-echo "install zoxide"
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-echo "--------------------"
-
 echo "install lf"
 wget https://github.com/gokcehan/lf/releases/download/r29/lf-linux-amd64.tar.gz
 chmod u+x lf-linux-amd64.tar.gz

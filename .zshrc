@@ -36,5 +36,7 @@ export NVM_DIR="$HOME/.nvm"
 # eval "$(oh-my-posh init zsh)"
 # eval "$(oh-my-posh init zsh --config ~/jandedobbeleer.omp.json)"
 
-# zoxide
-eval "$(zoxide init zsh)"
+# autojump
+# git clone https://github.com/wting/autojump.git
+[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
