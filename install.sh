@@ -3,6 +3,7 @@
 # This scirpt will install various necessary tools
 # for the new environment
 # please use bash install.sh not sudo bash isntall.sh
+# hi hi
 
 hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 wslip=$(hostname -I | awk '{print $1}')
