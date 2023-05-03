@@ -28,10 +28,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 # export PATH=$PATH:~/
 
-# autojump git clone git://github.com/wting/autojump.git || cd autojump || ./install.py
-# [[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
-# autoload -U compinit && compinit -u
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
