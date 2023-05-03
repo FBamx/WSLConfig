@@ -37,3 +37,6 @@ export NVM_DIR="$HOME/.nvm"
 # oh-my-posh
 # eval "$(oh-my-posh init zsh)"
 # eval "$(oh-my-posh init zsh --config ~/jandedobbeleer.omp.json)"
+
+# zoxide
+eval "$(zoxide init zsh)"

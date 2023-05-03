@@ -80,6 +80,9 @@ wget https://github.com/neovim/neovim/releases/tag/stable/nvim.appimage
 chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 echo "--------------------"
 
+echo "install zoxide"
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+echo "--------------------"
 
 echo "git clone nvim conf"
 git clone https://github.com/FBamx/lazynvim.git -b master ~/.config/nvim
