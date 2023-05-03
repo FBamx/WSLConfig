@@ -24,6 +24,8 @@ export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:/usr/local/node-v18.15.0-linux-x64/bin
 # export PATH=$PATH:/usr/local/jdk-17.0.5/bin
 export PATH=$PATH:~/go/bin
+export EDITOR="nvim"
+export VISUAL="nvim"
 # export PATH=$PATH:~/
 
 # autojump git clone git://github.com/wting/autojump.git || cd autojump || ./install.py
