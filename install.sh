@@ -103,12 +103,22 @@ chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 git clone https://github.com/FBamx/lazynvim.git -b master ~/.config/nvim
 echo "--------------------"
 
+echo "install logo-ls"
+wget https://github.com/Yash-Handa/logo-ls/releases/download/v1.3.7/logo-ls_Linux_x86_64.tar.gz
+chmod u+x logo-ls_Linux_x86_64.tar.gz
+tar -zxvf logo-ls_Linux_x86_64.tar.gz
+cd logo-ls_Linux_x86_64
+sudo cp logo-ls /usr/local/bin
+sudo cp logo-ls.1.gz /usr/share/man/man1/
+cd .. && rm -rf logo-ls*
+echo "--------------------"
+
 echo "install autojump"
-git clone https://github.com/wting/autojump.git ~/autojump
+git clone https://github.com/wting/autojump.git
 sudo ln -s /usr/bin/python3 /usr/bin/python
-cd ~/autojump
+cd autojump
 ./install.py
-cd ~/WSLConfig/
+cd .. && rm -rf autojump
 echo "--------------------"
 
 echo "if the environment is WSL, please configure /etc/wsl.conf like follow"
