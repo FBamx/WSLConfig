@@ -11,6 +11,7 @@ plugins=(git
 source $ZSH/oh-my-zsh.sh
 
 alias vim=nvim
+alias clr=clear
 alias ls=logo-ls
 alias kc=kubectl
 alias kb=kubebuilder
