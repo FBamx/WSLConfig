@@ -20,14 +20,11 @@ alias proxy="source ~/proxy.sh"
 alias lg=lazygit
 . ~/proxy.sh set
 
-# export PATH=$PATH:/usr/local/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
-# export PATH=$PATH:/usr/local/node-v18.15.0-linux-x64/bin
-# export PATH=$PATH:/usr/local/jdk-17.0.5/bin
 export PATH=$PATH:~/go/bin
 export EDITOR="nvim"
 export VISUAL="nvim"
-# export PATH=$PATH:~/
+export NVIMRC=~/.config/nvim/init.lua
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
