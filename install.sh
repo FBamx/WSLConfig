@@ -68,10 +68,6 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 echo "--------------------"
 
-echo "install zoxide"
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-echo "--------------------"
-
 echo "install tpm"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "--------------------"

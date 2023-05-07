@@ -38,6 +38,3 @@ export NVM_DIR="$HOME/.nvm"
 # git clone https://github.com/wting/autojump.git
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
-
-# zoxide
-eval "$(zoxide init zsh)"
