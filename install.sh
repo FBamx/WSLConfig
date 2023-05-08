@@ -100,7 +100,7 @@ echo "--------------------"
 echo "install nvim && download nvim conf from github"
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
-git clone https://github.com/FBamx/lazynvim.git -b master ~/.config/nvim
+git clone https://github.com/FBamx/MyNvim.git -b master ~/.config/nvim
 echo "--------------------"
 
 echo "install logo-ls"
