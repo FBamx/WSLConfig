@@ -19,6 +19,7 @@ echo "apt install ..."
 sudo apt update
 sudo apt install net-tools -y
 sudo apt install make -y
+sudo apt install xsel -y
 sudo apt install openssh-server -y
 sudo apt install gcc -y
 sudo apt install g++ -y
