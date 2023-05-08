@@ -10,6 +10,7 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
+alias v=vim
 alias vim=nvim
 alias clr=clear
 alias ls=logo-ls
